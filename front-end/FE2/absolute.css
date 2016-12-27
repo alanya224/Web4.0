@@ -1,0 +1,6 @@
+.relative_parent {
+  background-color: red;
+  height: 500px;
+  position: relative;
+  width: 500px;
+}

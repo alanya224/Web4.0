@@ -1,0 +1,33 @@
+.menu {
+  text-align: center;
+  background-color: #D5B0AC; /*background cũng được */
+  color: #402E2A;
+}
+.menu span {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  line-height: 30px;
+  position: relative;
+}
+.menu span:hover{
+  color: #FFFFFF;
+  background: #9CD08F;
+  cursor: pointer;
+
+}
+span nav {                    /*Menu drop down*/
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+}
+nav>span:hover>nav {
+  display: inline-block;
+}
+span span nav {               /*Menu drop right*/
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    display: none;
+}
