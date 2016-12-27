@@ -1,0 +1,26 @@
+.menu {
+  text-align: center;
+  background-color: #D5B0AC; /*background cũng được */
+  color: #402E2A;
+}
+.menu span {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  line-height: 30px;
+}
+.menu span:hover,
+.menu.menu_verticle span:hover {
+  color: #FFFFFF;
+  background: #9CD08F;
+  cursor: pointer;
+}
+.menu.menu_verticle {
+  background: transparent;
+  display: inline-block;
+}
+.menu.menu_verticle span {
+  background-color: #D5B0AC;
+  display: block;
+  margin-top: 1px;
+}
