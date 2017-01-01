@@ -1,0 +1,11 @@
+.big_text_block{
+  background: pink;
+  font-size: 36px;
+}
+/*media là 1 cái if*/
+@media (max-width:768px){ /*media query - check điều kiện trong () và thực hiện {}*/
+  .big_text_block{
+    background: green;
+    font-size: 48px;
+  }
+}
