@@ -49,102 +49,113 @@ body{
   padding-left: 15px;
   color: #CECECE;
 }
-.col {
+.item_container{
   position: relative;
-  margin: 20px, 20px, 20px;
+  /*margin-top: 20px;*/
 }
-.picture {
+.item{
+  margin-top: 20px;
+}
+.image_container{
   position: relative;
-  overflow: hidden;
+
 }
-.picture img {
+.image_container > img{
   width: 100%;
-  -webkit-transition:all .4s linear; /*no delay*/
-  transition:all .4s linear;
 }
-.picture .overlay {
-  width: 100%;
-  height: 100%;
+.overlay{
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
 }
-.picture .overlay:hover {
-  opacity: 1;
-}
-.picture:hover>img {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.picture .overlay .button {
-  position: absolute;
-  top: 15px;
-  left: 13px;
-  width: 40px;
-  height: 40px;
-}
-.picture .overlay .button .button-plus {
-  font-size: 30px;
-  transform: translate(2px, 2px);
-}
-.picture .overlay .button:hover .button-plus{
-  color: #4B4B4B;
-}
-.picture .overlay .button:hover {
-  background: #D1D1D1;
-  cursor: pointer;
-}
-
-.picture .overlay>div {
-  display: inline-block;
-  position: absolute;
-}
-.picture .overlay>div>span {
+.image_container:hover .overlay{
   display: block;
-  text-align: center;
-  color: #FFFFFF;
-  height: 30px;
 }
-.picture .overlay>div>.icon {
-  font-size: 20px;
-}
-.picture .overlay .eye {
-  bottom: 0;
-  left: 30px;
-}
-.picture .overlay .time {
-  bottom: 0;
-  left: 40%;
-}
-.picture .overlay .plus {
-  bottom: 0;
-  right: 30px;
-}
-
-.content-pic {
-  position: absolute;
+.info_container{
+  padding: 15px;
   background: #FFFFFF;
 }
-.content-pic .title-pic img {
+.author_info,.commentor_info{
+  margin-bottom: 15px;
+}
+.author_avatar{
   float: left;
-  border-radius: 100%;
+  margin-right: 15px;
   width: 50px;
   height: 50px;
-  margin: 15px 20px 10px 15px;
+  border-radius: 50%;
 }
-.content-pic .title-pic .name-pic {
-  padding-top: 20px;
+.plus_button{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 30px;
+  width: 48px;
+  height: 50px;
+  line-height: 30px;
+  background: #ccccb3;
+  color: #FFFFFF;
+  border: 0 none;
+  cursor: pointer;
+}
+.img_statistics_container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FFFFFF;
+}
+.inner_plus_button{
+  position: absolute;
+  background: #ccccb3;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  left: 24px;
+  top: 20px;
+  color: #FFFFFF;
+  border: 0 none;
+  cursor: pointer;
+}
+.plus_button,.inner_plus_button:hover {
+  background: #e6e6e6;
+  color:#000000;
+}
+.inner_img_statistics_container{
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  right: 0;
+  color: #a6a6a6;
+}
+.inner_info_container{
+  position: absolute;
+  bottom: 0px;
+  left: 43px;
+  right: 0;
+}
+div.modal-header{
+  height: 60px;
+}
+.modal-body>img{
   display: block;
+  margin: auto;
+}
+.commentor_avatar{
+  float: left;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.modal-footer h5{
+  text-align: left;
   font-weight: bold;
-  font-size: 18px;
 }
-.content-pic .title-pic .sub-name {
-  display: block;
-  color: #8A8A8A;
-}
-.content-pic .description {
-  margin: 15px 15px 20px 15px;
+.modal-footer p{
+  text-align: left;
 }
