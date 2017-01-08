@@ -1,0 +1,72 @@
+body{
+  background: #DFDFDF;
+}
+.header{
+  padding: 10px 0 10px 0;
+  background: #99ddff;
+}
+.site_logo img{
+  max-height: 100px;
+}
+.text-center{
+  text-align: left;
+}
+.search_form{
+  margin-top: 23px;
+}
+.search_form input[type=text]{
+  padding-right: 23px;
+  background: #e6ffff;
+}
+.search_form .glyphicon-search{
+  position: absolute;
+  right: 22px;
+  top: 71%;
+  transform: translate(0, -50%);
+  color: #CECECE;
+}
+.thinking-box{
+  position: relative;
+  background: #FFFFFF;
+}
+.thinking-box {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 60px 0;
+}
+.img-col img{
+  max-width: 100%;
+  display: block;
+}
+.box-1 .sub-title {
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  line-height: 3em;
+  font-size: 34px;
+  margin: 0 0 40px;
+  font-family: Helvetica;
+  font-stretch: condensed;
+}
+p {
+  font-size: 120%;
+  text-align: center;
+  font-family:Impact;
+  vertical-align: baseline;
+}
+.thinking-box .btn {
+  position: absolute;
+  left: 283px;
+  margin: 20px 0 10px;
+  right: 275px;
+  padding: 9px 15px 9px 15px;
+  border: 1px solid #FE4937;
+  font-family:Impact;
+  color: #fe4937;
+}
+a.btn:hover {
+  background-color: red;
+  color: #FFFFFF;
+}

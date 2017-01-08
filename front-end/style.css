@@ -1,0 +1,41 @@
+body {
+  background-image: url("https://images8.alphacoders.com/753/753125.jpg");
+}
+
+p {
+  color: red;
+}
+h1 {
+    color: orange;
+}
+
+#title {
+  background-color: lightgreen ;
+}
+.small_title {
+  text-decoration: underline;
+}
+.secondary_style {
+  text-decoration-color: red;
+}
+[href] {font-size: 50px}
+input[type=""]{}
+
+.small_title.secondary_style {
+  border-top: 1px dashed red;
+}
+.secondary_style .small_title {
+  text-decoration: line-through;
+  color: green;
+}
+.secondary_style>.small_title {
+  color: #ffffff;
+}
+
+.small_title:hover {
+  background: pink;
+}
+
+a:active{
+  color: black;
+}

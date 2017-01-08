@@ -46,17 +46,15 @@
 
       <script id="item-template" type="text/x-handlebars-template">
         {{#each items}}
-
+        <!--Make Items-->
         <div class="col-md-3 col-sm-6 item_container">
           <div class="item">
             <div class="image_container">
               <img src="{{imageUrl}}" alt="1">
               <div class="overlay">
 
-                <button class="btn btn-primary btn-lg plus_button" data-toggle="modal" data-target="#myModal">
-
+                <button class="btn btn-primary btn-lg plus_button" data-toggle="modal" data-target="#{{myModal}}">
                   <span class="glyphicon glyphicon-plus"></span>
-
                 </button>
 
                 <div class="img_statistics_container">
@@ -88,12 +86,10 @@
             </div>
           </div>
         </div>
-
-
         <!-- Make Modal-->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="{{myModal}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
-            <div class="modal-content item_container">
+            <div class="modal-content">
               <div class="modal-header">
 
                 <button class="inner_plus_button">
@@ -101,8 +97,6 @@
                   </span>
                 </button>
                 <div class="inner_img_statistics_container">
-
-                  <div class="row right text-center">
                     <div class="col-xs-3 text-center">
                       <span class="glyphicon glyphicon-eye-open"></span>
                       <p>{{view}}</p>
@@ -115,7 +109,6 @@
                       <span class="glyphicon glyphicon-plus"></span>
                       <p>{{plus}}</p>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="modal-body">
@@ -134,7 +127,7 @@
                 <div class="info_container">
                   <div class="commentor_info">
                     <img src="image/3.png" class="commentor_avatar"alt="2">
-                    <h5 style="text-align: left">Long Le</h5>
+                    <h5>Long Le</h5>
                   </div>
                   <p>Hello, It's meeeeeeeeeeeeeeeeeee</p>
                 </div>
@@ -142,9 +135,6 @@
             </div>
           </div>
         </div>
-
-
-
-{{/each}}
-    </script>
+        {{/each}}
+      </script>
     </body>

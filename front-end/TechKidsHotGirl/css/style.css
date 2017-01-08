@@ -128,7 +128,7 @@ body{
 .inner_img_statistics_container{
   position: absolute;
   top: 20px;
-  left: 230px;
+  left: 200px;
   right: 0;
   color: #a6a6a6;
 }
@@ -144,6 +144,7 @@ div.modal-header{
 .modal-body>img{
   display: block;
   margin: auto;
+  width: 295px;
 }
 .commentor_avatar{
   float: left;
