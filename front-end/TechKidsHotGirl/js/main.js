@@ -48,15 +48,24 @@ function requestNextPage(itemTemplate){
     var itemHtml = $(itemTemplate(data));
     $("#item_list").append(itemHtml);
     if (firstLoad){
-      $('#item_list').masonry({
-        itemSelector: '.item_container',
-        columnWidth: '.item_container',
-        percentPosition: true
+      // $('#item_list').masonry({
+      //   itemSelector: '.item_container',
+      //   columnWidth: '.item_container',
+      //   percentPosition: true
+      // });
+      $('#item_list').imagesLoaded().done(function(){
+        $('#item_list').masonry({
+          itemSelector: '.item_container',
+          columnWidth: '.item_container',
+          percentPosition: true
+        });
       });
       firstLoad = false;
     }
     else{
-      $("#item_list").masonry('appended',itemHtml);
+      $("#item_list").imagesLoaded().done( function() {
+        $("#item_list").masonry('appended',itemHtml);
+        });
     }
   }).fail(function(error){
     console.log(error);
