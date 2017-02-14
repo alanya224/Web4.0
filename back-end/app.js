@@ -5,7 +5,7 @@ var dataInLine = [];
 var newData = '';
 var j=0,count = 0;
 
-  FileUtils.readfile('fileInput.txt', (data) => {
+  FileUtils.readfile(process.argv[2], (data) => {
     for (var i = 0;i <data.length;i++) {
       dataInLine[j] = data[i].split(' ');
       j++;
@@ -29,6 +29,6 @@ var j=0,count = 0;
     }
     for (i = 0;i < dataInLine.length;i++)
       newData+=dataInLine[i][0] + ' ' + dataInLine[i][1] + '\r\n';
-    FileUtils.writefile('fileOutput.txt',newData)
+    FileUtils.writefile(process.argv[3],newData)
 
 });
