@@ -4,11 +4,11 @@ var nodemon = require('gulp-nodemon')
 var gulp = require('gulp')
 
 //gulp.task('default',['task-1','task-2']);
-gulp.task('task-1', () =>
+gulp.task('task-1', function() {
     gulp.src(['client/js/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
-);
+});
 gulp.task('task-2', function() {
   gulp.src('client/css/*.css')
     .pipe(csslint())
