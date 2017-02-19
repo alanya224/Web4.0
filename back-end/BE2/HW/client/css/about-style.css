@@ -1,0 +1,237 @@
+.container-fluid {
+    padding: 0;
+}
+
+/*================================HEADER=====================================*/
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/about-screen-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .navbar-fixed-top {
+    background: transparent;
+    transition: all .2s ease;
+}
+
+header .screen_img {
+    padding-top: 5%;
+    margin: 0 0 0 5%;
+}
+
+header .screen_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+header .background {
+    visibility: hidden;
+    overflow: hidden;
+}
+
+header .logo {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+header:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header .nav {
+    padding-top: 0.1%;
+    margin-bottom: 0.2%;
+    float: right;
+}
+
+header .nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+header .nav ul li {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 0;
+    margin: 0 30px 0 0;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+    background: transparent;
+}
+
+header .nav ul li a:hover {
+    background: transparent;
+    opacity: 0.7;
+}
+
+header .nav ul li a:focus {
+    background: transparent;
+}
+
+header .active a {
+    border-bottom-color: #f84541;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    transition: all .2s linear;
+}
+
+header nav .navbar-header .navbar-toggle {
+    color: #ffffff;
+}
+/*============================END OF HEADER==================================*/
+
+/*================================FOOTER=====================================*/
+
+#footer {
+    height: auto;
+    background-color: #1b1515;
+    position: relative;
+}
+
+#footer .container {
+    padding: 47px 25px 0 25px;
+}
+
+#footer .sub_nav {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+#footer nav ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+}
+
+#footer nav ul li {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 0;
+    margin: 0 0 0 0;
+    background: none;
+    display: inline-block;
+    width: 17%;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+#footer nav ul li a {
+    color: #f84541;
+    text-decoration: none;
+    opacity: 1;
+}
+
+#footer nav ul li a:hover {
+    opacity: 0.7;
+}
+
+#footer .active a {
+    border-bottom-color: #f84541;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+#footer .meta-box {
+    padding-top: 31px;
+    margin-bottom: 17px;
+    border-top-width: thin;
+    border-top-color: rgb(41, 32, 32);
+    border-top-style: solid;
+}
+
+#footer .meta-box .mail a {
+    font-size: 1.2em;
+    color: #f84541;
+    text-decoration: none;
+}
+
+#footer .meta-box .info span {
+    display: block;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+/*============================END OF FOOTER==================================*/
+
+/*=================================MAIN======================================*/
+p,h2,span {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*=======================INTRO============================*/
+#intro p {
+  text-align: center;
+  margin: 10% 25%;
+  font-size: 140%;
+}
+/*===================ABOUT MY TEAM========================*/
+#about .team_intro {
+  background-color: #000;
+}
+#about .team_intro h2 {
+  text-align: center;
+  font-size: 400%;
+  color: #FFF;
+}
+#about .team_intro p{
+  text-align: center;
+  margin: 6% 25%;
+  font-size: 140%;
+  color: #FFF;
+}
+#about .team_list {
+  background-color: #000;
+}
+#about .team_list .team_member {
+  position: relative;
+}
+#about .team_member>img {
+  width: 100%;
+  height: 300px;
+}
+#about .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: none;
+}
+#about .overlay>span {
+  position: absolute;
+  bottom: 10px;
+  left: 34%;
+  color: #FFF;
+  font-size: 200%;
+}
+#about .team_member:hover .overlay {
+  display: block;
+}
+#about .media_link:hover {
+  width: 35px;
+  cursor: pointer;
+}

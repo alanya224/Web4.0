@@ -1,0 +1,496 @@
+.container-fluid {
+    padding: 0;
+}
+
+/*================================HEADER=====================================*/
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/main-screen-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .navbar-fixed-top {
+    background: transparent;
+    transition: all .2s ease;
+}
+
+header .screen_overlay {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+header .screen_overlay .img{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+    padding: 1%;
+}
+
+header .login_box{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    top: 50%;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+header .screen_overlay img {
+    max-width: 100%;
+    max-height: 90vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header .background {
+    visibility: hidden;
+    overflow: hidden;
+}
+
+header .logo {
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+header:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+header .nav {
+    padding-top: 0.1%;
+    margin-bottom: 0.2%;
+    float: right;
+}
+
+header .nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+header .nav ul li {
+    font-size: 15px;
+    line-height: 1em;
+    padding: 0;
+    margin: 0 30px 0 0;
+    background: none;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 1;
+    background: transparent;
+}
+
+header .nav ul li a:hover {
+    background: transparent;
+    opacity: 0.7;
+}
+
+header .nav ul li a:focus {
+    background: transparent;
+}
+
+header .active a {
+    border-bottom-color: #f84541;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    transition: all .2s linear;
+}
+
+header nav .navbar-header .navbar-toggle {
+    color: #ffffff;
+}
+/*============================END OF HEADER==================================*/
+
+/*============================BOX GAMES==================================*/
+#games .games_group {
+    display: flex;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#games .item {
+    width: 33.5%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#games .item .background {
+    opacity: 1;
+}
+
+#games .item:hover {
+    width: 40%;
+}
+
+#games .item:hover .background {
+    opacity: 0.4;
+}
+
+#games .item .overlay {
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#games .item .overlay .background_overlay {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0, 20%);
+    transition: all .2s linear;
+}
+
+#games .item .overlay .description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .4s linear;
+    opacity: 0;
+}
+
+#games .item .overlay .description .wrap {
+    width: 400px;
+    height: 90px;
+}
+
+#games .item .overlay .description .wrap p {
+    padding: 15px;
+}
+
+#games .item:hover .overlay .background_overlay {
+    transform: translate(0, -5%);
+}
+
+#games .overlay .description .light {
+    background: transparent;
+    color: #ffffff;
+    border-width: medium;
+    border-color: #ffffff;
+    font-size: 17px;
+    padding: 7px 30px;
+}
+
+#games .item:hover .overlay .description {
+    opacity: 1;
+}
+/*============================END BOX GAMES==================================*/
+
+/*============================FEATURE==================================*/
+#features {
+    background: #ffffff;
+    color: #000000;
+    margin: 0 0 15% 0;
+    padding-top: 5%;
+}
+
+#features .row {
+    margin: 0;
+}
+
+.row-center {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+#features .features_group {
+    font-size: 19px;
+}
+
+#features .features_group .sub_title::after {
+    content: ' ';
+    height: 5px;
+    width: 50px;
+    display: block;
+    margin: 16px auto 13px;
+    background: red;
+}
+
+#features .features_group p {
+    color: #676767;
+}
+
+#features .img_wrap {
+    margin-top: 20px;
+    margin-bottom: 44px;
+    height: 251px;
+}
+
+#features .img_wrap img {
+    margin: 0px;
+    display: inline-block;
+    vertical-align:
+}
+
+.fadeOff {
+    opacity: 1;
+}
+
+#features .fadeInUp {
+    animation-duration: 0.3s;
+    animation-name: fadeInUp;
+}
+
+#features .fadeInUp:nth-child(2) {
+    animation-duration: 0.5s;
+}
+
+#features .fadeInUp:nth-child(3) {
+    animation-duration: 0.7s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*============================END OF FEATURE==================================*/
+
+/*============================ADVANTAGE==================================*/
+
+#advantages .thinking-box {
+    position: relative;
+    background: linear-gradient(to bottom right, gray, white, white, white);
+}
+
+#advantages .thinking-box {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 60px 0;
+}
+
+#advantages .img-col img {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#advantages .box-1 {
+    text-align: center;
+}
+
+#advantages .box-1 .sub-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+#advantages h2 {
+    line-height: 3em;
+    font-size: 34px;
+    margin: 0 0 40px;
+    font-family: Helvetica;
+    font-stretch: condensed;
+}
+
+#advantages p {
+    font-size: 120%;
+    text-align: center;
+    font-family: Impact;
+    vertical-align: baseline;
+}
+
+#advantages .thinking-box .btn {
+    margin: 20px -20px 10px;
+    padding: 9px 15px 9px 15px;
+    border: 1px solid #FE4937;
+    font-family: Impact;
+    color: #fe4937;
+}
+
+#advantages a.btn:hover {
+    background-color: red;
+    color: #FFFFFF;
+}
+
+#advantages .fadeInLeft {
+    animation-duration: 0.3s;
+    animation-name: afadeInLeft;
+    animation-timing-function: linear;
+}
+
+#advantages .fadeInRight {
+    animation-duration: 0.3s;
+    animation-name: afadeInRight;
+    animation-timing-function: linear;
+}
+
+@keyframes afadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes afadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*============================END OF ADVANTAGE==================================*/
+
+/*================================FOOTER=====================================*/
+
+#footer {
+    height: auto;
+    background-color: #1b1515;
+    position: relative;
+}
+
+#footer .container {
+    padding: 47px 25px 0 25px;
+}
+
+#footer .meta-box {
+    padding-top: 31px;
+    margin-bottom: 17px;
+    border-top-width: thin;
+    border-top-color: rgb(41, 32, 32);
+    border-top-style: solid;
+}
+
+#footer .meta-box .mail a {
+    font-size: 1.2em;
+    color: #f84541;
+    text-decoration: none;
+}
+
+#footer .meta-box .info span {
+    display: block;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+/*============================END OF FOOTER==================================*/
+
+/*============================RESPONSIVE==================================*/
+
+@media (max-width: 1024px) {
+    header .screen_overlay .img {
+        display: block;
+        height: 80%;
+        width: 90%;
+    }
+
+    header .screen_overlay .login_box {
+        display: block;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        top: 80%;
+    }
+
+    header .screen_overlay .login_box h1 {
+        margin: 0;
+    }
+
+    #games .games_group {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    #games .item {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: #000000;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #games .item:hover {
+        width: 100%;
+    }
+
+    #games .item .background {
+        opacity: 0.4;
+    }
+
+    #games .item .overlay .description {
+        opacity: 1;
+    }
+
+    #games .item .overlay .background_overlay {
+        transform: translate(0, -5%);
+    }
+
+    #footer nav ul li {
+        width: 100%;
+        display: block;
+        margin: 0 0 20px 0;
+    }
+
+    header .nav ul li {
+        display: block;
+    }
+}
+
+/*============================END OF RESPONSIVE==================================*/
